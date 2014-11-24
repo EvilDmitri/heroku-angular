@@ -1,0 +1,7 @@
+<div ng-include="'components/navbar/navbar.html'"></div>
+
+<ul class="nav nav-tabs nav-stacked col-md-4 col-lg-4 col-sm-6" ng-repeat="driver in driversList">
+  <li><a href="#" tooltip="{{driver.Driver.driverId}}">{{driver.Driver.driverId}}
+    <button type="button" class="close">&times;</button>
+  </a></li>
+</ul>
