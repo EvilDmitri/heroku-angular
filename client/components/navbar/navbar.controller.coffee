@@ -3,8 +3,11 @@
 angular.module 'angTestFullstackApp'
 .controller 'NavbarCtrl', ($scope, $location, Auth) ->
   $scope.menu = [
-    title: 'Home'
-    link: '/'
+    {title: 'Home'
+    link: '/'},
+    {title: 'Message'
+    link: '/message'}
+
   ]
   $scope.isCollapsed = true
   $scope.isLoggedIn = Auth.isLoggedIn
